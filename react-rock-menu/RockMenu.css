@@ -1,0 +1,97 @@
+.menu-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.menu-move-clock {
+  animation: circle-move-clock 3s;
+}
+
+.menu-move-anticlock {
+  animation: circle-move-clock 3s pause;
+}
+
+@keyframes circle-move-clock {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+@keyframes circle-move-anticlock {
+  /*from {transform: rotate(360deg);}*/
+  to {transform: rotate(-360deg);}
+}
+
+.menu-center {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: deepskyblue;
+}
+
+.menu-sub {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 95px;
+  height: 95px;
+  transform-origin: 100% 100%;
+  background: -webkit-radial-gradient(right bottom, transparent 38%, red 35%);
+}
+
+.top {
+  transform: rotate(45deg);
+  top: -3px;
+  left:5px;
+}
+
+.right {
+  transform: rotate(135deg);
+  top: 5px;
+  left:13px;
+}
+
+.bottom {
+  transform: rotate(225deg);
+  left: 5px;
+  top: 13px;
+}
+
+.left {
+  transform: rotate(315deg);
+  top: 5px;
+  left: -3px;
+}
+
+.bottom > span {
+  position: absolute;
+  transform: rotate(136deg);
+  top: 40px;
+  left: 15px;
+}
+
+.left> span {
+  position: absolute;
+  transform: rotate(-46deg);
+  top: 40px;
+  left: 40px;
+}
+
+.top > span {
+  position: absolute;
+  transform: rotate(-47deg);
+  top: 35px;
+  left: 30px;
+}
+
+.right > span {
+  position: absolute;
+  transform: rotate(-45deg);
+  top: 35px;
+  left: 30px;
+}
